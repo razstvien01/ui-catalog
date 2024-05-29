@@ -8,7 +8,7 @@ body {
   background-color: #f0f0f0;
 }
 
-.navbar {
+.sidebar {
   position: fixed;
   left: 0;
   top: 0;
@@ -23,7 +23,7 @@ body {
   flex-direction: column;
 }
 
-.nav-links {
+.side-links {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -31,14 +31,14 @@ body {
   padding-left: 10px;
 }
 
-.nav-links a {
+.side-links a {
   text-decoration: none;
   padding: 10px;
   transition: background-color 0.3s;
   color: white;
 }
 
-.nav-links a:hover {
+.side-links a:hover {
   background-color: #555;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .content {
-  margin-left: 220px;
+  /* margin-left: 220px; */
   padding: 20px;
 }
 

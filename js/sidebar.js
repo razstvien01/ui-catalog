@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-  fetch('/components/navbar.html')
+  fetch('/components/sidebar.html')
     .then(response => response.text())
     .then(data => {
-      document.getElementById('navbar-placeholder').innerHTML = data;
+      document.getElementById('sidebar-placeholder').innerHTML = data;
     });
 });
