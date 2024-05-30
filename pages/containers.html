@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/containers.css">
   <link rel="stylesheet" href="../css/sizes.css">
   <link rel="stylesheet" href="../css/margins.css">
+  <link rel="stylesheet" href="../css/demoBlocks.css">
 </head>
 
 <body class="rowContainer noMargin fullViewSize">
@@ -17,9 +18,22 @@
 		<h1>Containers</h1>
 		<section>
 			<label>Row Container</label>
-			<article >
-
+			<article class="rowContainer">
+				<div class="cssBox rowContainer">
+					<div class="block centerContainer blockColor1">1</div>
+					<div class="block centerContainer blockColor2">2</div>
+					<div class="block centerContainer blockColor3">3</div>
+				</div>
+				<code class="codeBox">
+					<pre class="smallMargin">
+.rowContainer {
+	display: flex;
+	flex-direction: row;
+}
+					</pre>
+				</code>
 			</article>
+
 		</section>
 	</main>
 	<script src="/js/sidebar.js"></script>
