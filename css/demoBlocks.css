@@ -1,0 +1,19 @@
+:root {
+	--blockWidth: 30px;
+}
+
+.block {
+	width: var(--blockWidth);
+}
+
+.blockColor1 {
+	background-color: cadetblue;
+}
+
+.blockColor2 {
+	background-color: tan;
+}
+
+.blockColor3 {
+	background-color: powderblue;
+}

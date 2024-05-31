@@ -1,0 +1,11 @@
+:root {
+	--smallMarginValue: 8px;
+}
+
+.smallMargin {
+	margin: var(--smallMarginValue);
+}
+
+.noMargin {
+	margin: 0;
+}

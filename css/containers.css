@@ -1,0 +1,15 @@
+.rowContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.columnContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.centerContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
