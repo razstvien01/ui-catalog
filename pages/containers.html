@@ -10,31 +10,91 @@
   <link rel="stylesheet" href="/css/sizes.css">
   <link rel="stylesheet" href="/css/margins.css">
   <link rel="stylesheet" href="/css/demoBlocks.css">
+  <link rel="stylesheet" href="/css/containerSizes.css">
 </head>
 
-<body class="rowContainer noMargin fullViewSize">
+<body class="rowContainer noMargin maxHeight fullWidthViewSize">
 	<div id="sidebar-placeholder" class="rowContainer"></div>
 	<main class="smallMargin">
 		<h1>Containers</h1>
 		<section>
 			<label>Row Container</label>
 			<article class="rowContainer">
-				<div class="cssBox rowContainer">
-					<div class="block centerContainer blockColor1">1</div>
-					<div class="block centerContainer blockColor2">2</div>
-					<div class="block centerContainer blockColor3">3</div>
+        <div class="cssBox rowContainer">
+					<div class="widthBlock centerContainer blockColor1">1</div>
+					<div class="widthBlock centerContainer blockColor2">2</div>
+					<div class="widthBlock centerContainer blockColor3">3</div>
 				</div>
 				<code class="codeBox">
 					<pre class="smallMargin">
 .rowContainer {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 					</pre>
 				</code>
 			</article>
 
 		</section>
-	</main>
-	<script src="/js/sidebar.js"></script>
+    <section>
+      <label>Column Container</label>
+      <article class="rowContainer">
+        <div class="cssBox columnContainer">
+          <div class="heightBlock centerContainer blockColor1">1</div>
+          <div class="heightBlock centerContainer blockColor2">2</div>
+          <div class="heightBlock centerContainer blockColor3">3</div>
+        </div>
+        <code class="codeBox">
+          <pre class="smallMargin">
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+}
+          </pre>
+        </code>
+      </article>
+
+    </section>
+      <section>
+        <label>Horizontal Center Container</label>
+        <article class="rowContainer">
+          <div class="cssBox horizontalCenterContainer">
+            <div class="rowContainer minWidthContentContainer">
+              <div class="widthBlock centerContainer blockColor1">1</div>
+              <div class="widthBlock centerContainer blockColor2">2</div>
+              <div class="widthBlock centerContainer blockColor3">3</div>
+            </div>
+          </div>
+          <code class="codeBox">
+            <pre class="smallMargin">
+.horizontalCenterContainer {
+  display: flex;
+  justify-content: center;
+}
+          </pre>
+        </code>
+      </article>
+    </section>
+    <section>
+      <label>Vertical Center Container</label>
+      <article class="rowContainer">
+        <div class="cssBox verticalCenterContainer">
+          <div class="columnContainer minHeightContentContainer consumeWidth">
+            <div class="heightBlock centerContainer blockColor1">1</div>
+            <div class="heightBlock centerContainer blockColor2">2</div>
+            <div class="heightBlock centerContainer blockColor3">3</div>
+          </div>
+        </div>
+        <code class="codeBox">
+          <pre class="smallMargin">
+.verticalCenterContainer {
+  display: flex;
+  align-items: center;
+}        </pre>
+      </code>
+    </article>
+  </section>
+
+</main>
+<script src="/js/sidebar.js"></script>
 </body>

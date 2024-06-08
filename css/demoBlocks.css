@@ -1,9 +1,14 @@
 :root {
 	--blockWidth: 30px;
+	--blockHeight: 30px;
 }
 
-.block {
+.widthBlock {
 	width: var(--blockWidth);
+}
+
+.heightBlock {
+	height: var(--blockWidth);
 }
 
 .blockColor1 {
@@ -17,3 +22,4 @@
 .blockColor3 {
 	background-color: powderblue;
 }
+ 

@@ -1,0 +1,7 @@
+.minWidthContentContainer {
+  width: min-content;  
+}
+
+.minHeightContentContainer {
+  height: min-content;
+}

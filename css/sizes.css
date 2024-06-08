@@ -2,3 +2,26 @@
 	height: 100vh;
 	width: 100vw;
 }
+
+.maxSize {
+  height: max-content;
+  width: max-content;
+}
+
+.maxHeight {
+  height: max-content;
+}
+
+.fullWidthViewSize {
+  width: 100vw;
+}
+
+.consumeHeight {
+  height: 100%;
+}
+
+.consumeWidth {
+  width: 100%;
+}
+
+
